@@ -20,7 +20,7 @@ hatY  = (net.w * sigmoid(net.V * X'))'; % prediction
 
 % normalize
 myMax = max(hatY);
-hatY = 3.*hatY./myMax
+hatY = 1 + 2.*hatY./myMax
 csvwrite('yhats.csv',hatY);
 return;
 end

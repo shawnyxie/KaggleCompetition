@@ -11,11 +11,11 @@ Xtest = homedepot_test(:, 1:3);
 % number of hidden units
 params.hidden_units = 200;
 % SGD, batch size
-params.batch_size = 10;
+params.batch_size = 4;
 % SGD, step size
-params.step_size = 1e-4;
+params.step_size = 1e-3;
 % epoches
-params.max_epoches = 30;
+params.max_epoches = 80;
 
 % Try nn with 10 hidden units. 
 params.hidden_units = 10; 
